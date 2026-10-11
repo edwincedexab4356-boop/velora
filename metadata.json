@@ -1,0 +1,6 @@
+{
+  "name": "VELORA STUDIO | Arquitectura & Interiorismo de Alta Gama",
+  "description": "Estudio boutique de arquitectura contemporánea e interiorismo de lujo en Madrid y Milán. Espacios escultóricos, materialidad honesta y rigor proyectual.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

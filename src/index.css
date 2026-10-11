@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Custom architectural utilities */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color: #141413;
+    background-color: #FBFBF9;
+  }
+}
+
+/* Editorial subtle film grain and transitions */
+.editorial-mask {
+  mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+}
+
+/* Subtle image zoom on hover with smooth easing */
+.img-editorial-zoom {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
+}
+
+.img-editorial-zoom:hover {
+  transform: scale(1.03);
+}
+
+/* Print/demo watermark style for clean transparency */
+.demo-badge-text {
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
