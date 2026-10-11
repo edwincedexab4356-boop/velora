@@ -26,6 +26,9 @@ export function TeamSection() {
         <div className="lg:col-span-5 aspect-square overflow-hidden bg-[#ECE8E1] border border-[#DDD8CE]">
           <img
             src={director.image}
+            onError={(e) => {
+              (e.currentTarget as HTMLImageElement).src = '/images/architect.jpg';
+            }}
             alt={director.name}
             className="w-full h-full object-cover img-editorial-zoom grayscale"
             loading="lazy"

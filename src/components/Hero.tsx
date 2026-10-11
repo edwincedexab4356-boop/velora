@@ -1,4 +1,5 @@
 import { ArrowDown, ArrowUpRight } from 'lucide-react';
+import { HERO_IMAGE } from '../data/studioData.ts';
 
 interface HeroProps {
   onExploreProjects: () => void;
@@ -37,7 +38,7 @@ export function Hero({ onExploreProjects, onOpenContact }: HeroProps) {
             <button
               type="button"
               onClick={onExploreProjects}
-              className="px-6 py-3.5 bg-[#141413] text-[#FBFBF9] text-xs font-medium tracking-[0.15em] uppercase hover:bg-[#2C2B29] transition-all duration-300 flex items-center gap-2.5 shadow-sm"
+              className="px-6 py-3.5 bg-[#141413] text-[#FBFBF9] text-xs font-medium tracking-[0.15em] uppercase hover:bg-[#2C2B29] transition-all duration-300 flex items-center gap-2.5 shadow-sm cursor-pointer"
             >
               <span>Explorar Proyectos</span>
               <ArrowDown className="w-3.5 h-3.5 text-[#DDD8CE]" />
@@ -46,7 +47,7 @@ export function Hero({ onExploreProjects, onOpenContact }: HeroProps) {
             <button
               type="button"
               onClick={onOpenContact}
-              className="group inline-flex items-center gap-2 py-3 px-2 text-xs font-medium tracking-[0.15em] uppercase text-[#141413] hover:text-[#73716E] transition-colors"
+              className="group inline-flex items-center gap-2 py-3 px-2 text-xs font-medium tracking-[0.15em] uppercase text-[#141413] hover:text-[#73716E] transition-colors cursor-pointer"
             >
               <span>Hablemos de tu Proyecto</span>
               <ArrowUpRight className="w-3.5 h-3.5 text-[#8C8883] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -58,7 +59,10 @@ export function Hero({ onExploreProjects, onOpenContact }: HeroProps) {
       {/* Grand Architectural Focal Image (16:9) with quiet caption */}
       <div className="relative w-full aspect-[16/9] overflow-hidden bg-[#ECE8E1] border border-[#E8E6DF] group">
         <img
-          src="/src/assets/images/hero_architecture_velora_1791739491934.jpg"
+          src={HERO_IMAGE}
+          onError={(e) => {
+            (e.currentTarget as HTMLImageElement).src = '/images/hero.jpg';
+          }}
           alt="Residencia privada de hormigón y piedra con piscina reflectante al atardecer frente al mar por VELORA STUDIO"
           className="w-full h-full object-cover img-editorial-zoom"
           referrerPolicy="no-referrer"

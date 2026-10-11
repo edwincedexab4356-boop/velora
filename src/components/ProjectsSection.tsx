@@ -84,6 +84,9 @@ export function ProjectsSection({ onSelectProject }: ProjectsSectionProps) {
               >
                 <img
                   src={project.mainImage}
+                  onError={(e) => {
+                    (e.currentTarget as HTMLImageElement).src = '/images/villa.jpg';
+                  }}
                   alt={project.title}
                   className="w-full h-full object-cover img-editorial-zoom"
                   loading="lazy"

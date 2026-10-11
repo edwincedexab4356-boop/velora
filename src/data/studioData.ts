@@ -1,3 +1,11 @@
+import heroImg from '../assets/images/hero_architecture_velora_1791739491934.jpg';
+import villaImg from '../assets/images/project_brutalist_villa_1791739501396.jpg';
+import penthouseImg from '../assets/images/project_penthouse_interior_1791739510964.jpg';
+import pavilionImg from '../assets/images/project_stone_pavilion_1791739520804.jpg';
+import architectImg from '../assets/images/architect_portrait_elena_1791739529007.jpg';
+
+export const HERO_IMAGE = heroImg;
+
 export interface Project {
   id: string;
   title: string;
@@ -60,7 +68,7 @@ export const STUDIO_PROJECTS: Project[] = [
     summary: 'Volumetría monolítica de hormigón entablillado y planos de agua orientados al horizonte atlántico.',
     concept: 'Un diálogo radical entre la solidez telúrica de la roca caliza y la transparencia infinita del mar. Los volúmenes se proyectan en voladizo para capturar la brisa marina y la luz cambiante del norte.',
     materials: ['Hormigón blanco entablillado', 'Piedra caliza abujardada', 'Vidrio laminado bajo emisivo', 'Madera de teca recuperada'],
-    mainImage: '/src/assets/images/hero_architecture_velora_1791739491934.jpg',
+    mainImage: heroImg,
     curatorNote: 'Seleccionado para la Muestra Bienal de Arquitectura Ibérica 2025.',
     awards: 'Premio Obra del Año — Arquitectura Residencial Privada'
   },
@@ -74,7 +82,7 @@ export const STUDIO_PROJECTS: Project[] = [
     summary: 'Geometría escultórica de hormigón ocre y mampostería seca enmarcando un olivo centenario.',
     concept: 'Estructurada en torno a un patio interior de contemplación, la vivienda abraza la topografía en pendiente con terrazas escalonadas y una piscina desbordante que funde el agua con el cielo mediterráneo.',
     materials: ['Hormigón pigmentado tierra', 'Piedra de cantera local', 'Roble ahumado cepillado', 'Acero corten satinado'],
-    mainImage: '/src/assets/images/project_brutalist_villa_1791739501396.jpg',
+    mainImage: villaImg,
     curatorNote: 'Publicado en Monocle Design Awards y Cereal Magazine Vol. 24.',
     awards: 'Mención Especial del Jurado — FAD de Arquitectura'
   },
@@ -88,7 +96,7 @@ export const STUDIO_PROJECTS: Project[] = [
     summary: 'Atmósfera serena de líneas depuradas, boiseries de nogal estriado y travertino apomazado.',
     concept: 'Reconfiguración integral de un triplex clásico en un santuario contemporáneo. La distribución abierta prioriza las vistas panorámicas al atardecer mediante cerramientos de vidrio de suelo a techo y una iluminación escultórica indirecta.',
     materials: ['Travertino Navona apomazado', 'Nogal americano acanalado', 'Lino belga lavado', 'Latón cepillado artesanal'],
-    mainImage: '/src/assets/images/project_penthouse_interior_1791739510964.jpg',
+    mainImage: penthouseImg,
     curatorNote: 'Portada especial "Interiors of Distinction", Architectural Digest España.',
     awards: 'Premio Nacional de Interiorismo Residencial'
   },
@@ -102,7 +110,7 @@ export const STUDIO_PROJECTS: Project[] = [
     summary: 'Estructura ligera de madera carbonizada y muros ciclópeos de basalto sobre estanque reflectante.',
     concept: 'Espacio concebido para la contemplación botánica y eventos de arte privado. La pérgola de madera oscurecida modula las sombras cenitales mientras el estanque perimetral refleja el paisaje forestal.',
     materials: ['Basalto volcánico natural', 'Madera Yakisugi Shou Sugi Ban', 'Estructura de acero pavonado', 'Granito abujardado'],
-    mainImage: '/src/assets/images/project_stone_pavilion_1791739520804.jpg',
+    mainImage: pavilionImg,
     curatorNote: 'Distinguido por la Fundación Mies van der Rohe en la categoría de Pequeña Escala.',
     awards: 'Iconic Awards: Innovative Architecture Best of Best'
   },
@@ -116,7 +124,7 @@ export const STUDIO_PROJECTS: Project[] = [
     summary: 'Restauración sosegada de una casona noble del siglo XVIII fusionada con espacialidad vanguardista.',
     concept: 'Preservación rigurosa de arquerías de ladrillo original y artesonados mudéjares, insertando cápsulas habitables de hormigón pulido y lucernarios escultóricos que bañan el patio claustral de luz cenital.',
     materials: ['Ladrillo manual recuperado', 'Morteros de cal pura', 'Microcemento mineral continuo', 'Vidrio óptico templado'],
-    mainImage: '/src/assets/images/hero_architecture_velora_1791739491934.jpg',
+    mainImage: heroImg,
     curatorNote: 'Premio Patrimonio Sostenible Hispania Nostra 2024.',
     awards: 'Medalla de Honor de la Real Academia de Bellas Artes'
   },
@@ -130,7 +138,7 @@ export const STUDIO_PROJECTS: Project[] = [
     summary: 'Intervención minimalista en antigua fundición milanesa para exposición de alta joyería y diseño.',
     concept: 'Un contenedor silencioso donde las texturas minerales del yeso texturizado y los pilares de hierro forjado original dialogan con vitrinas suspendidas de cuarcita blanca y luz rasante.',
     materials: ['Cuarcita de Vals', 'Mortero a la cal artesanal', 'Hierro fundido restaurado', 'Luminarias de diseño a medida'],
-    mainImage: '/src/assets/images/project_penthouse_interior_1791739510964.jpg',
+    mainImage: penthouseImg,
     curatorNote: 'Exhibido durante Fuorisalone Milano Design Week.',
     awards: 'Milano Design Award for Spatial Excellence'
   }
@@ -286,7 +294,7 @@ export const STUDIO_TEAM: TeamMember[] = [
     role: 'Socia Fundadora & Directora Creativa',
     bio: 'Formada en la ETSAM de Madrid y la ETH de Zúrich. Doctora en Composición Arquitectónica. Su trabajo investiga la resonancia emocional del silencio y el vacío en la arquitectura contemporánea.',
     credentials: 'Colegiada COAM nº 18.421 · Jurado Bienal de Arquitectura 2023',
-    image: '/src/assets/images/architect_portrait_elena_1791739529007.jpg'
+    image: architectImg
   },
   {
     id: 'mateo-soler',

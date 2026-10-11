@@ -67,6 +67,9 @@ export function ProjectModal({ project, onClose, onInquireProject }: ProjectModa
         <div className="relative aspect-[16/9] w-full bg-[#141413] overflow-hidden">
           <img
             src={project.mainImage}
+            onError={(e) => {
+              (e.currentTarget as HTMLImageElement).src = '/images/hero.jpg';
+            }}
             alt={project.title}
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
